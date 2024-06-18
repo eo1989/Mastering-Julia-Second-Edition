@@ -95,7 +95,7 @@ julia> ENV["PACKT_HOME"]
 # Now unset it, verify it is so.
 julia> evunset("PACKT_HOME");
 julia> ENV["PACKT_HOME"]
-ERROR: KeyError: key "PACKT_HOME" not found
+# ERROR: KeyError: key "PACKT_HOME" not found
 
 
 #= 
@@ -203,9 +203,9 @@ include <julia.h>
 #include <stdio.h>
 #include <math.h>
 
-// Only define this once if in an executable ...
-// (i.e. not in a shared library) ...
-// ... and if we want the fastest code.
+## Only define this once if in an executable ...
+## (i.e. not in a shared library) ...
+## ... and if we want the fastest code.
 JULIA_DEFINE_FAST_TLS()
 
 int main(int argc, char *argv[])
